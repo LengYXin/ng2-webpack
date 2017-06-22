@@ -4,7 +4,8 @@
   "description": "及其精简的 的 ng2 webpack 项目",
   "main": "index.js",
   "scripts": {
-    "start": "webpack-dev-server  --open"
+    "start": "webpack-dev-server --config webpack.dev.js  --open ",
+    "build": "webpack"
   },
   "author": "",
   "license": "ISC",

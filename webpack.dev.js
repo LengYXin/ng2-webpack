@@ -16,6 +16,14 @@ module.exports = {
         filename: '[name].js',
         chunkFilename: '[id].chunk.js'
     },
+    devServer: {
+        inline: true,
+        port: "8088",
+        proxy: {
+
+        }
+    },
+    devtool: 'source-map', //source-map
     resolve: {
         extensions: ['.ts', '.js']
     },
@@ -31,10 +39,7 @@ module.exports = {
             },
             {
                 test: /\.html$/,
-                loader: 'html-loader',
-                options: {
-                    minimize: true
-                }
+                loader: 'html-loader'
             },
             {
                 test: /\.(png|jpe?g|gif|svg|woff|woff2|ttf|eot|ico)$/,
@@ -45,7 +50,7 @@ module.exports = {
                 exclude: path.resolve(__dirname, "src", "app"), //排除 app目录
                 use: ExtractTextPlugin.extract({
                     fallback: "style-loader",
-                    use: "css-loader?minimize=true"
+                    use: "css-loader?sourceMap=true"
                 })
             },
             {
@@ -75,11 +80,11 @@ module.exports = {
         //生成对应的css文件
         new ExtractTextPlugin('styles.css'),
         //发布的时候 压缩使用
-        new webpack.optimize.UglifyJsPlugin({
-            mangle: {
-                keep_fnames: true
-            }
-        }),
+        // new webpack.optimize.UglifyJsPlugin({ 
+        //     mangle: {
+        //         keep_fnames: true
+        //     }
+        // }),
 
         // ng cli 执行编译 但是报错 可通过 不明缘由  
         // https://github.com/angular/angular-cli/issues/6734 这里有人提问 但是没有答复
