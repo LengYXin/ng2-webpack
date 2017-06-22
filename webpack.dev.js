@@ -7,6 +7,6 @@ let wpc = require('./config/webpack');
 let wp = {};
 let plugins = [];
 Object.assign(wp, wpc(__dirname, path));
-wp.plugins = plugins.concat(wp.plugins);
+delete wp.devtool;
 //官网的指导地址 https://angular.io/guide/webpack#plugins
 module.exports = wp;
