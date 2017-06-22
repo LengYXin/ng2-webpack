@@ -1,7 +1,7 @@
 {
   "name": "ng2",
   "version": "1.0.0",
-  "description": "",
+  "description": "及其精简的 的 ng2 webpack 项目",
   "main": "index.js",
   "scripts": {
     "start": "webpack-dev-server  --open"
@@ -26,18 +26,27 @@
     "webpack": "^2.6.0"
   },
   "dependencies": {
-    "@angular/animations": "^4.0.0",
-    "@angular/common": "^4.0.0",
-    "@angular/compiler": "^4.0.0",
-    "@angular/core": "^4.0.0",
-    "@angular/forms": "^4.0.0",
-    "@angular/http": "^4.0.0",
-    "@angular/platform-browser": "^4.0.0",
-    "@angular/platform-browser-dynamic": "^4.0.0",
-    "@angular/router": "^4.0.0",
+    "@angular/animations": "^4.2.3",
+    "@angular/common": "^4.2.3",
+    "@angular/compiler": "^4.2.3",
+    "@angular/core": "^4.2.3",
+    "@angular/forms": "^4.2.3",
+    "@angular/http": "^4.2.3",
+    "@angular/material": "^2.0.0-beta.7",
+    "@angular/platform-browser": "^4.2.3",
+    "@angular/platform-browser-dynamic": "^4.2.3",
+    "@angular/router": "^4.2.3",
     "core-js": "^2.4.1",
     "extract-text-webpack-plugin": "^2.1.2",
     "rxjs": "^5.1.0",
     "zone.js": "^0.8.4"
-  }
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/LengYXin/ng2-webpack.git"
+  },
+  "bugs": {
+    "url": "https://github.com/LengYXin/ng2-webpack/issues"
+  },
+  "homepage": "https://github.com/LengYXin/ng2-webpack#readme"
 }
