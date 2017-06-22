@@ -1,5 +1,6 @@
 # ng2-webpack
 及其精简的 的 ng2 webpack 项目
+<p>没有加入 karma 的测试模块（发现没啥人用） 需要的话可以自行加入
 <p>需要全局安装 webpack2 和 webpack-dev-server 
 <pre>
 //这里 我本地是 2.6.1版本 还没试过 3.0版本的webpack 
